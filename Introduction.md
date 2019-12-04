@@ -18,3 +18,10 @@ My approach to the problem is as follows:
 5. A map is presented to the traveller showing the selected venues and crime statistics of the area.
 6. The future probability of a crime happening near or around the selected top sites is also presented to the user.
 
+## Steps for this project
+
+1. Data Acquisition
+2. Data Cleansing
+3. Data Analysis
+4. Machine Learning
+5. Prediction
