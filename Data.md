@@ -115,3 +115,8 @@ Not all of the attributes are required so only the following data was imported:
 * Ward
 * Latitude
 * Longitude
+
+A sample of the imported data is shown.
+
+![Chicago Crime Data](/Images/Chicago_data.png)
+
