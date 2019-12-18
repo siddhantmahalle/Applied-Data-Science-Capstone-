@@ -87,25 +87,27 @@ This dataset can be download from the [Chicago Data Portal](https://data.cityofc
 
 Data is extracted from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) system. In order to protect the privacy of crime victims addresses are shown at the block level only and specific locations are not identified.
 
-| Column Name           | Type        | Description                                                  |
-| :-------------------- | :---------- | :----------------------------------------------------------- |
-| CASE#                 | Plain Text  | The Chicago Police Department RD Number (Records Division Number), which is unique to the incident. |
-| DATE OF OCCURRENCE    | Date & Time | Date when the incident occurred. this is sometimes a best estimate. |
-| BLOCK                 | Plain Text  | The partially redacted address where the incident occurred, placing it on the same block as the actual address. |
-| IUCR                  | Plain Text  | The Illinois Unifrom Crime Reporting code. This is directly linked to the Primary Type and Description. See the list of IUCR codes at https://data.cityofchicago.org/d/c7ck-438e. |
-| PRIMARY DESCRIPTION   | Plain Text  | The primary description of the IUCR code.                    |
-| SECONDARY DESCRIPTION | Plain Text  | The secondary description of the IUCR code, a subcategory of the primary description. |
-| LOCATION DESCRIPTION  | Plain Text  | Description of the location where the incident occurred.     |
-| ARREST                | Plain Text  | Indicates whether an arrest was made.                        |
-| DOMESTIC              | Plain Text  | Indicates whether the incident was domestic-related as defined by the Illinois Domestic Violence Act. |
-| BEAT                  | Plain Text  | Indicates the beat where the incident occurred. A beat is the smallest police geographic area – each beat has a dedicated police beat car. Three to five beats make up a police sector, and three sectors make up a police district. The Chicago Police Department has 22 police districts. See the beats at https://data.cityofchicago.org/d/aerh-rz74. |
-| WARD                  | Number      | The ward (City Council district) where the incident occurred. See the wards at https://data.cityofchicago.org/d/sp34-6z76. |
-| FBI CD                | Plain Text  | Indicates the crime classification as outlined in the FBI's National Incident-Based Reporting System (NIBRS). See the Chicago Police Department listing of these classifications at http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html. |
-| X COORDINATE          | Plain Text  | The x coordinate of the location where the incident occurred in State Plane Illinois East NAD 1983 projection. This location is shifted from the actual location for partial redaction but falls on the same block. |
-| Y COORDINATE          | Plain Text  | The y coordinate of the location where the incident occurred in State Plane Illinois East NAD 1983 projection. This location is shifted from the actual location for partial redaction but falls on the same block. |
-| LATITUDE              | Number      | The latitude of the location where the incident occurred. This location is shifted from the actual location for partial redaction but falls on the same block. |
-| LONGITUDE             | Number      | The longitude of the location where the incident occurred. This location is shifted from the actual location for partial redaction but falls on the same block. |
-| LOCATION              | Location    | The location where the incident occurred in a format that allows for creation of maps and other geographic operations on this data portal. This location is shifted from the actual location for partial redaction but falls on the same block. |
+| Column Name   | Type          | Description                                            | 
+| :------------ | :------------ | :----------------------------------------------------- | 
+| Case Number    | Plain Text    | The Chicago Police Department RD Number (Records Division Number), which is unique to the incident. | 
+| Date | Date & Time   | Date when the incident occurred. this is sometimes a best estimate. |
+| Block	        | Plain Text    | The partially redacted address where the incident occurred, placing it on the same block as the actual address. |
+| IUCR	        | Plain Text    | The Illinois Unifrom Crime Reporting code. This is directly linked to the Primary Type and Description. See the list of IUCR codes at https://data.cityofchicago.org/d/c7ck-438e. |
+| Primary Type   | Plain Text    | The primary description of the IUCR code. |
+| Description	| Plain Text    | The secondary description of the IUCR code, a subcategory of the primary description. |
+| Location Description | Plain Text | Description of the location where the incident occurred. |
+| Arrest        | Plain Text    | Indicates whether an arrest was made. |
+| Domestic      | Plain Text    | Indicates whether the incident was domestic-related as defined by the Illinois Domestic Violence Act. |
+| Beat          | Plain Text    | Indicates the beat where the incident occurred. A beat is the smallest police geographic area – each beat has a dedicated police beat car. Three to five beats make up a police sector, and three sectors make up a police district. The Chicago Police Department has 22 police districts. See the beats at https://data.cityofchicago.org/d/aerh-rz74. |
+| Ward	        | Number        | The ward (City Council district) where the incident occurred. See the wards at https://data.cityofchicago.org/d/sp34-6z76. |
+| FBI Code        | Plain Text    | Indicates the crime classification as outlined in the FBI's National Incident-Based Reporting System (NIBRS). See the Chicago Police Department listing of these classifications at http://gis.chicagopolice.org/clearmap_crime_sums/crime_types.html. |
+| X Coordinate	| Plain Text    | The x coordinate of the location where the incident occurred in State Plane Illinois East NAD 1983 projection. This location is shifted from the actual location for partial redaction but falls on the same block. |
+| Y Coordinate	| Plain Text    | The y coordinate of the location where the incident occurred in State Plane Illinois East NAD 1983 projection. This location is shifted from the actual location for partial redaction but falls on the same block. |
+| Latitude	    | Number        | The latitude of the location where the incident occurred. This location is shifted from the actual location for partial redaction but falls on the same block. |
+| Longitude	    | Number        | The longitude of the location where the incident occurred. This location is shifted from the actual location for partial redaction but falls on the same block. |
+| Location	    | Location      | The location where the incident occurred in a format that allows for creation of maps and other geographic operations on this data portal. This location is shifted from the actual location for partial redaction but falls on the same block. |
+	
+
 
 Not all of the attributes are required so only the following data was imported:
 
